@@ -14,6 +14,7 @@ userInput.addEventListener("keydown", function(event) {
     let userValue = userInput.value;
     if (event.key === "Enter" && userValue === "defuser" && startTime !== 0) {
         timerE1.textContent = "YOU DID IT.";
+        clearInterval(timerId);
         userInput.value = "";
     }
 })
